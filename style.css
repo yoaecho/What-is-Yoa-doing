@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'AmericanTypewriter';
+    src:url('font/AmericanTypewriter.ttc') format('truetype');
+}
+.h1{
+     font-family:AmericanTypewriter ;
+}
+
+@font-face {
+    font-family: 'BigCaslon';
+    src:url('font/BigCaslon.ttf') format('truetype');
+}
+.h2{
+     font-family:BigCaslon ;
+     font-style: italic;
+     color: darkgrey;
+}
+
+
+body {
+    cursor: url('shubiao.png'), auto;
+   }
+
+   .floating-image {
+    position: fixed;
+    z-index: -1;
+  }
+  
+  
+  .floating-image img {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    transform:rotate(15deg);
+  }
+  
+  ul,li,ol{
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    padding-block-start: 0px;
+    margin-inline-start: 0px;
+    list-style: none;
+}
+
+
+.main{
+    clear: both;
+    width: 40%;
+   margin: 0 auto;
+    height: 350px;
+    box-shadow: 0px 0px 10px grey;
+    transform:rotate(-15deg);
+    margin-top: 10%;
+    font-family:BigCaslon ;
+}
+
+.main a {
+    
+    text-decoration: none;
+    color: black;
+    
+}
+.main h2{
+  height: 30px;
+  font-weight: normal;
+}
+
+.nav  {
+    width: 62.5%; 
+    float: left;
+    height: 50px;
+
+}
+
+
+
+
+
+.footer{
+    box-shadow: 0px -0.25px 10px   grey;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+     line-height: 30px;
+     font-family:AmericanTypewriter ;
+     font-size: 20px;
+}
+
+
+.header{
+  
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+   
+}
+
+
+.nav ul  {
+
+    width: 100%;
+    height: 60px;
+}
+
+.nav ul li {
+ 
+    width: calc(16.6% - 10px); 
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    margin-left: 10px; 
+}
+
+
+
+
+.nav ul li a {
+    font-family:AmericanTypewriter ;
+    text-decoration: none;
+color: black;
+font-size: 20px;
+}
+.nav ul li a:active {
+      text-decoration: line-through;
+      color: black;
+}
+
+
+
+.about{
+    font-family:AmericanTypewriter ;
+    width: 10%;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+.about :active {
+    text-decoration: line-through;
+      color: black;
+}
+
+
+
+
+.content{
+    clear: both;
+     width: 22.5%;
+     float: left;
+     margin-left: 35px;
+}
+.content :active {
+    text-decoration: line-through;
+      color: white;
+}
+.content h2 {
+    font-weight: bold;
+    font-size: 28px;
+    font-family:BigCaslon ;
+    
+}
+.content h2:active {
+    text-decoration: line-through;
+    color: white;
+}
+
+.date{
+    font-size: 18px;
+    color: grey;
+    font-style: italic;
+    line-height: 20px;
+    font-weight: lighter;
+    font-family:BigCaslon ;
+}
+.text{
+    line-height: 20px;
+    margin-top: 25px;
+    font-family:BigCaslon ;
+}
+.pic1,.pic2{
+    width: 450px;
+    height: 250px;
+   
+}
+.pic1{
+    position: absolute;
+    left: 52.5%;
+    top: 7.5%;
+    background-image: url('the1.png');
+    background-size: cover;
+}
+.pic2{
+   position: absolute;
+   right: 4.5%;
+   bottom: 4.5%;
+   background-image: url('the2.png');
+   background-size: cover;
+   }
+   
