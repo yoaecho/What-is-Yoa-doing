@@ -3,7 +3,10 @@
     padding: 0px;
 }
 
-
+@font-face {
+    font-family: 'FigGrotesk0.1-Light';
+    src:url('font/FigGrotesk0.1-Light.otf') format('truetype');
+}
 
 body {
     cursor: url('shubiao.png'), default;
@@ -465,7 +468,7 @@ font-size: 20px;
 .text{
     line-height: 20px;
     margin-top: 25px;
-    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+    font-family: 'FigGrotesk0.1-Light';  /* 文本 */
 }
 
 .pic1{
@@ -568,9 +571,6 @@ height: 400px;
     margin: auto;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.prev, .next {
-    display: none;
-}
 
 .slider-container {
     display: flex;
@@ -616,7 +616,7 @@ height: 400px;
      width: 22.5%;
      float: left;
      margin-left: 35px;
-     margin-top: 700px;
+     margin-top: 670px;
 }
 .content1 :active {
     text-decoration: line-through;
@@ -644,7 +644,7 @@ height: 400px;
 .text1{
     line-height: 20px;
     margin-top: 25px;
-    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+    font-family: 'FigGrotesk0.1-Light'; /* 文本 */
 }
 
 .picc1{
@@ -750,12 +750,12 @@ height: 570px;
 .text2{
     line-height: 20px;
     margin-top: 25px;
-    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+    font-family: 'FigGrotesk0.1-Light';   /* 文本 */
 }
 
 .piccc5{
    position: absolute;
-   top:1050px;
+   top:1120px;
    right: 25%;
    background-image: url('zhushijue.jpg');
    background-size: cover;
@@ -916,7 +916,7 @@ height: 570px;
     }     
     .picr1{
         position: absolute;
-        top:520px;
+        top:620px;
         right: 60%;
         background-image: url('sez.jpg');
         background-size: cover;
@@ -978,7 +978,7 @@ height: 570px;
                 .text6{
                     line-height: 20px;
                     margin-top: 25px;
-                    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+                    font-family: 'FigGrotesk0.1-Light'; 
                 }
                 
                 .pict1{
@@ -1091,7 +1091,7 @@ height: 570px;
 
 .video2 {
     position: absolute;
-    top: 1300px;
+    top: 1370px;
     left: 40px;
     width: 750px;
     height: 450px;
@@ -1131,5 +1131,5 @@ height: 570px;
 .text13{
     line-height: 20px;
     margin-top: 25px;
-    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+    font-family: 'FigGrotesk0.1-Light';  /* 文本 */
 }
