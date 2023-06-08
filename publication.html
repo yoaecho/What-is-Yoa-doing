@@ -9,11 +9,6 @@
   <link rel="stylesheet" href="./style.css">
   <style>
 
-    .point:nth-of-type(11) {
-      position: absolute;
-      right: 5px;
-      bottom: 50%;
-    }
 
     body {
       background-color: black;
@@ -33,71 +28,108 @@
       background-color: white;
     }
 
-    .point:nth-of-type(2) {
-      position: absolute;
+    .point:nth-of-type(1) {
+      position: fixed;
       top: 5px;
       left: 5px;
     }
+    .point:nth-of-type(2) {
+      position: fixed;
+      right: 5px;
+      top: 5px;
+    }
 
     .point:nth-of-type(3) {
-      position: absolute;
+      position: fixed;
       top: 50%;
       left: 5px;
     }
 
     .point:nth-of-type(4) {
-      position: absolute;
+      position: fixed;
       bottom: 5px;
       left: 5px;
     }
 
     .point:nth-of-type(5) {
-      position: absolute;
+      position: fixed;
       bottom: 5px;
       right: 5px;
     }
 
     .point:nth-of-type(6) {
-      position: absolute;
+      position: fixed;
       bottom: 50%;
       right: 5px;
     }
 
     .point:nth-of-type(7) {
-      position: absolute;
-      top: 5px;
-      right: 5px;
+      position: fixed;
+      bottom: 5px;
+      right: 33.3%;
     }
+    .point:nth-of-type(8) {
+      position: fixed;
+      right: 33.3%;
+      top: 5px;
+    }
+    .point:nth-of-type(9) {
+      position: fixed;
+      bottom: 5px;
+      right: 66.6%;
+    }
+    .point:nth-of-type(10) {
+      position: fixed;
+      right: 66.6%;
+      top: 5px;
+    }
+
+
   </style>
 </head>
 
 <body>
+  <div class="point"></div>
+  <div class="point"></div>
+  <div class="point"></div>
+  <div class="point"></div>
+  <div class="point"></div>
+  <div class="point"></div>
+  <div class="point"></div>
+  <div class="point"></div>
+  <div class="point"></div>
+  <div class="point"></div>
+
+
+  <div class="floating-image">
+    <img src="wuyun.png" alt="Floating Image">
+  </div>          
+<script src="cloud.js"></script> 
 
   <div class="header">
     <div class="nav">
 
       <ul>
         <li><a href="publication.html">PUBLICATION</a></li>
-        <li><a href="">POSTER</a></li>
-        <li><a href="">IDENTITY</a></li>
-        <li><a href="">VIDEO</a></li>
-        <li><a href="">EXHIBITION</a></li>
-        <li><a href="">OTHERS</a></li>
+        <li><a href="poster.html">POSTER </a></li>
+        <li><a href="identity.html">IDENTITY</a></li>
+        <li><a href="video.html">VIDEO</a></li>
+        <li><a href="exhibition.html">EXHIBITION</a></li>
+        <li><a href="others.html">OTHERS</a></li>
       </ul>
     </div>
-    <div class="about">
-      <a href="./index.html">ABOUT</a>
+  
 
 
     </div>
 
     <div class="content">
       <h2>
-        The journey of the Comb
+        The Journey Of The Comb
       </h2>
       <div class="date">
-        DATE：2023/02 <br>
-        CATAGORY：Publication
+        Date：2023/02 <br>
+        Catagory：Publication
       </div>
       <div class="text">
         The comb, as a private and intimate item, seems to be limited in our imagination in daily life, often only
@@ -109,22 +141,53 @@
         individuals in different dimensions.
       </div>
        <div class="pic1">
-        <img src="" alt="">
        </div>
        <div class="pic2">
- <img src="" alt="">
+        <div class="pic3"></div>
        </div>
      
-    </div>
+       <div class="slide">
+        <div class="slide-container">
+            <div class="slide-item" style="background-image: url('./the8.png');"></div>
+            <div class="slide-item" style="background-image: url('./the9.png');"></div>
+            <div class="slide-item" style="background-image: url('./the10.png');"></div>
+        </div>
+        <div class="slide-nav">
+            <div class="slide-nav-item prev">&#8249;</div>
+            <div class="slide-nav-item next">&#8250;</div>
+        </div>
+      </div>
 
   </div>
-  <div class="point"></div>
-  <div class="point"></div>
-  <div class="point"></div>
-  <div class="point"></div>
-  <div class="point"></div>
-  <div class="point"></div>
 
+
+
+  <div class="content1">
+    <h2>
+      The Guide to The Good Life
+    </h2>
+    <div class="date1">
+      Date：2022/11 <br>
+      Catagory：Publication
+    </div>
+    <div class="text1">
+      A guide book for RAM Highlights 2022: <br>During this difficult year, participants asked
+"what is a good life", and the designer responded through the typefaces and graphic design.
+English capital letters tightly wrapping the lowercase letters inside, Chinese 好 and 活 it is closed in 美 and 生. The two sets of typeface designs bring a lot of associations. The graphics are derived from the green, yellow and red health codes, and the graphics look like a common tablecloth or woven bag from a distance.The guide was designed as an additional graphic material for the exhibition.
+    </div>
+     <div class="picc1">
+     </div>
+     <div class="picc2">
+      <div class="picc3"></div>
+      <div class="picc4"></div>
+      <div class="picc5"></div>
+     </div>
+
+    </div><div class="back">
+     <a href="next.html">BACK</a> </div>
+
+  
+<script src="./lunbo2.js"></script>
 
 </body>
 

@@ -3,6 +3,15 @@
     padding: 0px;
 }
 
+
+
+body {
+    cursor: url('shubiao.png'), default;
+
+    height: 2200px;
+   }
+
+
 @font-face {
     font-family: 'AmericanTypewriter';
     src:url('font/AmericanTypewriter.ttc') format('truetype');
@@ -12,19 +21,17 @@
 }
 
 @font-face {
-    font-family: 'BigCaslon';
-    src:url('font/BigCaslon.ttf') format('truetype');
+    font-family: 'GillSans';
+    src:url('font/GillSans.ttc') format('truetype');
 }
 .h2{
-     font-family:BigCaslon ;
-     font-style: italic;
+    font-family: 'Gill Sans Light Italic', 'Gill Sans', sans-serif;
+font-style: italic;
+ font-size: 27px;
      color: darkgrey;
 }
 
 
-body {
-    cursor: url('shubiao.png'), auto;
-   }
 
    .floating-image {
     position: fixed;
@@ -50,14 +57,32 @@ body {
 
 .main{
     clear: both;
-    width: 40%;
+    width: 45%;
    margin: 0 auto;
     height: 350px;
     box-shadow: 0px 0px 10px grey;
     transform:rotate(-15deg);
     margin-top: 10%;
-    font-family:BigCaslon ;
+    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;
+    position: relative;
+
 }
+@font-face {
+    font-family: 'CirrusCumulus';
+    src:url('font/CirrusCumulus.otf') format('truetype');
+}
+
+.main::after {
+    content: "CONTACT ME";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: gray;
+    padding: 10px;
+    font-weight: normal;
+    font-family:CirrusCumulus ;
+    font-size: 60px;
+  }
 
 .main a {
     
@@ -66,20 +91,11 @@ body {
     
 }
 .main h2{
-  height: 30px;
+  height: 28px;
   font-weight: normal;
 }
 
-.nav  {
-    width: 62.5%; 
-    float: left;
-    height: 50px;
-
-}
-
-
-
-
+/*字幕*/
 
 .footer{
     box-shadow: 0px -0.25px 10px   grey;
@@ -101,6 +117,242 @@ body {
    
 }
 
+/*next*/
+.pub {
+    width: 62.5%;
+    float: left;
+    height: 100px; /* 修改为你想要的高度 */
+    margin-top: 20px; /* 修改为你想要的上边距 */
+    margin-left: 200px;
+    animation: floating1 10s infinite;
+}
+
+@keyframes floating1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+  
+
+  .pub1 {
+background-image: url('self1.jpg');
+
+height: 30px; /* 修改为你想要的高度 */
+width: 45px;
+margin-top: -35px; /* 修改为你想要的上边距 */
+    margin-left: 150px;
+  }
+  
+  
+  .pub a {
+    font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .pub a:active {
+    text-decoration: line-through;
+    color: black;
+  }
+  
+  
+  .pos {
+    width: 62.5%;
+    float: left;
+    height: 100px; /* 修改为你想要的高度 */
+    margin-top: 0px; /* 修改为你想要的上边距 */
+    margin-left: 900px;
+    animation: floating 10s infinite;
+}
+
+@keyframes floating {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(-20px, 20px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  
+  
+
+  .pos a {
+    font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .pub a:active {
+    text-decoration: line-through;
+    color: black;
+  }
+
+  .ide {
+    width: 62.5%;
+    float: left;
+    height: 100px; /* 修改为你想要的高度 */
+    margin-top: 0px; /* 修改为你想要的上边距 */
+    margin-left:450px;
+    animation: floating2 10s infinite;
+}
+
+@keyframes floating2 {
+    0% {
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        transform: translate3d(0, -20px, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  
+  
+  
+  .ide a {
+    font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .ide a:active {
+    text-decoration: line-through;
+    color: black;
+  }
+
+  .vid {
+    width: 62.5%;
+    float: left;
+    height: 100px; /* 修改为你想要的高度 */
+    margin-top: 40px; /* 修改为你想要的上边距 */
+    margin-left:1340px;
+    animation: floating2 10s infinite;
+}
+
+@keyframes floating2 {
+    0% {
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        transform: translate3d(0, -20px, 0);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  
+  
+  
+  .vid a {
+    font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .vid a:active {
+    text-decoration: line-through;
+    color: black;
+  }
+
+  .exh {
+   
+    width: 62.5%;
+    float: left;
+    height: 100px; /* 修改为你想要的高度 */
+    margin-top: -20px; /* 修改为你想要的上边距 */
+    margin-left:35px;
+    animation: floating 10s infinite;
+}
+
+@keyframes floating {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(-20px, 20px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  
+  
+  .exh a {
+    font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .exh a:active {
+    text-decoration: line-through;
+    color: black;
+  }
+
+  .oth {
+    width: 62.5%;
+    float: left;
+    height: 100px; /* 修改为你想要的高度 */
+    margin-top: 40px; /* 修改为你想要的上边距 */
+    margin-left:750px;
+    animation: floating1 10s infinite;
+}
+
+@keyframes floating1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+  
+  
+  
+  .oth a {
+    font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .oth a:active {
+    text-decoration: line-through;
+    color: black;
+    
+  }
+
+
+  .wz{
+  
+    background-image: url('wz.png');
+    background-size: 100% 100% ;
+
+    width: 1420px;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+}
+
 
 .nav ul  {
 
@@ -118,9 +370,6 @@ body {
     margin-left: 10px; 
 }
 
-
-
-
 .nav ul li a {
     font-family:AmericanTypewriter ;
     text-decoration: none;
@@ -133,6 +382,13 @@ font-size: 20px;
 }
 
 
+.oth a {
+    font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  
 
 .about{
     font-family:AmericanTypewriter ;
@@ -143,15 +399,36 @@ font-size: 20px;
     font-size: 20px;
     text-align: center;
     color: black;
+    animation: floating2 12s infinite;
 }
+
+@keyframes floating2 {
+    0% {
+        transform: translate3d(0, 0, 0);
+      }
+      50% {
+        transform: translate3d(20px, -50px, -30px);
+      }
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+}
+
+.about a {
+    font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
 .about :active {
+    
     text-decoration: line-through;
       color: black;
 }
 
 
 
-
+/* Publication */
 .content{
     clear: both;
      width: 22.5%;
@@ -164,13 +441,17 @@ font-size: 20px;
 }
 .content h2 {
     font-weight: bold;
-    font-size: 28px;
-    font-family:BigCaslon ;
+    font-size: 23px;
+    font-family:AmericanTypewriter ; /* 标题 */
     
 }
 .content h2:active {
     text-decoration: line-through;
     color: white;
+}
+@font-face {
+    font-family: 'Baskerville';
+    src:url('font/Baskerville.ttc') format('truetype');
 }
 
 .date{
@@ -179,30 +460,676 @@ font-size: 20px;
     font-style: italic;
     line-height: 20px;
     font-weight: lighter;
-    font-family:BigCaslon ;
+    font-family:Baskerville ;  /* 日期 */
 }
 .text{
     line-height: 20px;
     margin-top: 25px;
-    font-family:BigCaslon ;
+    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
 }
-.pic1,.pic2{
-    width: 450px;
-    height: 250px;
-   
-}
+
 .pic1{
     position: absolute;
-    left: 52.5%;
-    top: 7.5%;
+    left: 40%;
+    top: 9%;
     background-image: url('the1.png');
     background-size: cover;
+    width: 500px;
+    height: 300px;
 }
 .pic2{
    position: absolute;
-   right: 4.5%;
-   bottom: 4.5%;
-   background-image: url('the2.png');
+   right: 7%;
+   background-image: url('the3.png');
    background-size: cover;
+   width: 600px;
+height: 400px;
    }
-   
+
+   *{
+    padding: 0;
+    margin: 0;
+}
+
+/* Publication lunbo */
+.slide {
+    position: absolute;
+    right: 55%;
+    height: 40vh; 
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    top:700px
+}
+
+.slide-container {
+    display: flex;
+    flex-wrap: nowrap;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+}
+
+.slide-item {
+    flex-shrink: 0;
+    width: 33.33333%;
+    height: 100%;
+    background-position: center;
+    background-size:cover;
+    transition: transform 0.5s ease;
+}
+
+.slide-nav {
+    position: absolute;
+    top: 50%;
+    left: 30%; 
+    width: 110%;  
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.slide-nav-item {
+    width: 5px;  
+    height: 40px;  
+    background-color: black;
+    cursor: pointer;
+}
+
+.pic3{
+    position: absolute;
+    right: -20%;
+    background-image: url('.png');
+    background-size: cover;
+    width: 500px;
+ height: 300px;
+ top: 600px;
+    }
+
+/* Next lunbo */
+   *{
+    padding: 0;
+    margin: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50vh; 
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.prev, .next {
+    display: none;
+}
+
+.slider-container {
+    display: flex;
+    flex-wrap: nowrap;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+}
+
+.slider-item {
+    flex-shrink: 0;
+    width: 33.33333%;
+    height: 100%;
+    background-position: center;
+    background-size:cover;
+    transition: transform 0.5s ease;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    left: -5%; 
+    width: 110%;  
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.slider-nav-item {
+    width: 5px;  
+    height: 40px;  
+    background-color: black;
+    cursor: pointer;
+}
+
+
+/* Publication 2*/
+.content1{
+    clear: both;
+     width: 22.5%;
+     float: left;
+     margin-left: 35px;
+     margin-top: 700px;
+}
+.content1 :active {
+    text-decoration: line-through;
+      color: white;
+}
+.content1 h2 {
+    font-weight: bold;
+    font-size: 22px;
+    font-family:AmericanTypewriter ; /* 标题 */
+    
+}
+.content1 h2:active {
+    text-decoration: line-through;
+    color: white;
+}
+
+.date1{
+    font-size: 18px;
+    color: grey;
+    font-style: italic;
+    line-height: 20px;
+    font-weight: lighter;
+    font-family:Baskerville ;  /* 日期 */
+}
+.text1{
+    line-height: 20px;
+    margin-top: 25px;
+    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+}
+
+.picc1{
+    position: absolute;
+    left: 40%;
+    top: 1120px;
+    background-image: url('good1.png');
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    
+}
+.picc2{
+   position: absolute;
+   left: 3%;
+    top: 1600px;
+  
+   background-image: url('good2.png');
+   background-size: cover;
+   width: 500px;
+   height: 500px;
+   }
+
+   .picc3{
+    position: absolute;
+    left: 80%;
+    top: 400px;
+   background-image: url('good3.png');
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    }
+    .picc4{
+        position: absolute;
+        left: 110%;
+        top: 200px;
+       background-image: url('good4.png');
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        }
+        
+        .picc5{
+            position: absolute;
+            left: 170%;
+            top: -20px;
+           background-image: url('good5.png');
+            background-size: cover;
+            width: 315px;
+            height: 315px;
+            }
+ 
+/*poster*/
+.piccc1{
+    position: absolute;
+    left: 33%;
+    top: 10%;
+    background-image: url('yeguan.jpg');
+    background-size: cover;
+    width: 400px;
+    height:570px;
+}
+.piccc2{
+   position: absolute;
+   right: 5%;
+   background-image: url('yeguan1.jpg');
+   background-size: cover;
+   width: 400px;
+height: 570px;
+   }
+
+/*poster 2*/
+.content2{
+    clear: both;
+     width: 22.5%;
+     float: left;
+     margin-left: 35px;
+     margin-top: 660px;
+}
+.content2 :active {
+    text-decoration: line-through;
+      color: white;
+}
+.content2 h2 {
+    font-weight: bold;
+    font-size: 22px;
+    font-family:AmericanTypewriter ; /* 标题 */
+    
+}
+.content2 h2:active {
+    text-decoration: line-through;
+    color: white;
+}
+
+.date2{
+    font-size: 18px;
+    color: grey;
+    font-style: italic;
+    line-height: 20px;
+    font-weight: lighter;
+    font-family:Baskerville ;  /* 日期 */
+}
+.text2{
+    line-height: 20px;
+    margin-top: 25px;
+    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+}
+
+.piccc5{
+   position: absolute;
+   top:1050px;
+   right: 25%;
+   background-image: url('zhushijue.jpg');
+   background-size: cover;
+   width: 400px;
+height: 570px;
+   }
+
+
+/*identity1*/
+#gif-image {
+    width: 280px; /* 设置宽度为 300 像素 */
+    height: 280px; /* 设置高度为 200 像素 */
+    position: absolute;
+    left: 30%;
+    top: 24%;
+  }
+
+  .piccc6{
+    position: absolute;
+    top:70px;
+    right: 3%;
+    background-image: url('tgl2.jpg');
+    background-size: cover;
+    width: 590px;
+ height: 350px;
+    }
+
+ .piccc7{
+        position: absolute;
+        top: 520px;
+        right: 67%;
+        background-image: url('tgl4.jpg');
+        background-size: cover;
+        width: 450px;
+        height: 250px;
+        }
+
+ .piccc8{
+            position: absolute;
+            top:600px;
+            right: 15%;
+            background-image: url('tgl5.jpg');
+            background-size: cover;
+            width: 550px;
+        height: 320px;
+            }
+
+/*identity 2*/
+
+#gif-image1 {
+    width: 280px; /* 设置宽度为 300 像素 */
+    height: 380px; /* 设置高度为 200 像素 */
+    position: absolute;
+    left: 35%;
+    top: 1050px;
+  }
+  #gif-image2 {
+    width: 280px; /* 设置宽度为 300 像素 */
+    height: 380px; /* 设置高度为 200 像素 */
+    position: absolute;
+    left: 55%;
+    top: 1050px;
+  }
+       
+#gif-image3 {
+    width: 280px; /* 设置宽度为 300 像素 */
+    height: 380px; /* 设置高度为 200 像素 */
+    position: absolute;
+    left: 75%;
+    top: 1050px;
+  }
+      
+  .picq1{
+    position: absolute;
+    top:1500px;
+    right: 6%;
+    background-image: url('ciyuan4.png');
+    background-size: cover;
+    width: 450px;
+    height: 150px;
+    }
+
+    .picq2{
+        position: absolute;
+        top:1450px;
+        right: 60%;
+        background-image: url('ciyuan10.png');
+        background-size: cover;
+        width: 550px;
+        height: 450px;
+        }
+
+        .video {
+            position: absolute;
+            top: 1700px;
+            left: 40px;
+            width: 650px;
+            height: 350px;
+            left: 50%;
+          }
+
+/*Video 1*/
+.video1 {
+    position: absolute;
+    top: 63px;
+    left: 40px;
+    width: 750px;
+    height: 450px;
+    left: 40%;
+  }        
+  .pice1{
+    position: absolute;
+    top:560px;
+    right: 60%;
+    background-image: url('self.jpg');
+    background-size: cover;
+    width: 530px;
+    height: 300px;
+    }     
+    .pice2{
+        position: absolute;
+        top:530px;
+        right: 10%;
+        background-image: url('self1.jpg');
+        background-size: cover;
+        width: 530px;
+        height: 300px;
+        }     
+        .pice3{
+            position: absolute;
+            top: 900px;
+            right: 46%;
+            background-image: url('self2.jpg');
+            background-size: cover;
+            width: 530px;
+            height: 300px;
+            }     
+            .pice4{
+                position: absolute;
+                top: 870px;
+                right: 2%;
+                background-image: url('self3.jpg');
+                background-size: cover;
+                width: 530px;
+        height: 300px;
+                }     
+
+/*exh 1*/
+    
+  .picr{
+    position: absolute;
+    top:70px;
+    right: 10%;
+    background-image: url('sez1.JPG');
+    background-size: cover;
+    width: 530px;
+    height: 300px;
+    }     
+    .picr1{
+        position: absolute;
+        top:520px;
+        right: 60%;
+        background-image: url('sez.jpg');
+        background-size: cover;
+        width: 530px;
+        height: 300px;
+        }     
+
+        .picr2{
+            position: absolute;
+            top:430px;
+            right: 0%;
+            background-image: url('sez2.JPG');
+            background-size: cover;
+            width: 530px;
+            height: 300px;
+            }     
+
+            .picr3{
+                position: absolute;
+                top:770px;
+                right: 20%;
+                background-image: url('sez3.JPG');
+                background-size: cover;
+                width: 530px;
+                height: 300px;
+                }     
+
+
+                .content6{
+                    clear: both;
+                     width: 22.5%;
+                     float: left;
+                     margin-left: 35px;
+                     margin-top: 570px;
+                }
+                .content6 :active {
+                    text-decoration: line-through;
+                      color: white;
+                }
+                .content6 h2 {
+                    font-weight: bold;
+                    font-size: 22px;
+                    font-family:AmericanTypewriter ; /* 标题 */
+                    
+                }
+                .content6 h2:active {
+                    text-decoration: line-through;
+                    color: white;
+                }
+                
+                .date6{
+                    font-size: 18px;
+                    color: grey;
+                    font-style: italic;
+                    line-height: 20px;
+                    font-weight: lighter;
+                    font-family:Baskerville ;  /* 日期 */
+                }
+                .text6{
+                    line-height: 20px;
+                    margin-top: 25px;
+                    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+                }
+                
+                .pict1{
+                    position: absolute;
+                    left: 60%;
+                    top: 1100px;
+                    background-image: url('cyz.jpg');
+                    background-size: cover;
+                    width: 530px;
+            height: 300px;
+                    
+                }
+                .pict2{
+                   position: absolute;
+                   left: 3%;
+                    top: 1500px;
+                  
+                   background-image: url('cyz1.jpg');
+                   background-size: cover;
+                   width: 530px;
+            height: 300px;
+                   }
+
+                   .pict3{
+                    position: absolute;
+                    left: 53%;
+                    top: 1620px;
+                    background-image: url('cyz3.jpg');
+                    background-size: cover;
+                    width: 530px;
+                    height: 300px;
+                    
+                }
+                #gif-image4 {
+                    width:280px; /* 设置宽度为 300 像素 */
+                    height: 470px; /* 设置高度为 200 像素 */
+                    position: absolute;
+                    left: 5%;
+                    top: 100px;
+                  }
+                  #gif-image5 {
+                    width: 380px; /* 设置宽度为 300 像素 */
+                    height: 510px; /* 设置高度为 200 像素 */
+                    position: absolute;
+                    left: 65%;
+                    top: 200px;
+                  }
+                       
+                #gif-image6 {
+                    width: 280px; /* 设置宽度为 300 像素 */
+                    height: 280px; /* 设置高度为 200 像素 */
+                    position: absolute;
+                    left: 35%;
+                    top: 200px;
+                  }
+                
+                #gif-image7 {
+                  width: 380px; /* 设置宽度为 300 像素 */
+                  height: 480px; /* 设置高度为 200 像素 */
+                  position: absolute;
+                  left: 25%;
+                  top: 650px;
+                }
+                     
+              #gif-image8 {
+                  width: 280px; /* 设置宽度为 300 像素 */
+                  height: 280px; /* 设置高度为 200 像素 */
+                  position: absolute;
+                  left: 75%;
+                  top: 850px;
+                }
+
+                .back {
+                    position: absolute;
+                    margin-top: 2400px;
+                    right: 50px;
+                    font-family:CirrusCumulus ;
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                    animation: floating10 80s infinite;
+                }
+                
+                @keyframes floating10 {
+                    0% {
+                        transform: translate3d(0px, 40px, 100px);
+                      }
+                      50% {
+                        transform: translate3d(0, -1200px, 0px);
+                      }
+                      100% {
+                        transform: translate3d(100px, 60px, 0px);
+                      }
+                    }
+                  
+                  
+                  .back a {
+                    
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                  }
+                  .back :active {
+    
+    text-decoration: line-through;
+      color: white;
+}
+
+
+.video2 {
+    position: absolute;
+    top: 1300px;
+    left: 40px;
+    width: 750px;
+    height: 450px;
+    left: 40%;
+  }        
+
+  .content13{
+    clear: both;
+     width: 22.5%;
+     float: left;
+     margin-left: 35px;
+     margin-top: 830px;
+}
+.content13 :active {
+    text-decoration: line-through;
+      color: white;
+}
+.content13 h2 {
+    font-weight: bold;
+    font-size: 22px;
+    font-family:AmericanTypewriter ; /* 标题 */
+    
+}
+.content13 h2:active {
+    text-decoration: line-through;
+    color: white;
+}
+
+.date13{
+    font-size: 18px;
+    color: grey;
+    font-style: italic;
+    line-height: 20px;
+    font-weight: lighter;
+    font-family:Baskerville ;  /* 日期 */
+}
+.text13{
+    line-height: 20px;
+    margin-top: 25px;
+    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;  /* 文本 */
+}
