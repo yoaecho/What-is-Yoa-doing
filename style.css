@@ -28,7 +28,7 @@ body {
     src:url('font/GillSans.ttc') format('truetype');
 }
 .h2{
-    font-family: 'Gill Sans Light Italic', 'Gill Sans', sans-serif;
+    font-family: 'FigGrotesk0.1-Light';
 font-style: italic;
  font-size: 27px;
      color: darkgrey;
