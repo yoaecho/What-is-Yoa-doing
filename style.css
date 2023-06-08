@@ -29,7 +29,7 @@ body {
 }
 .h2{
     font-family: 'FigGrotesk0.1-Light';
-font-style: italic;
+
  font-size: 27px;
      color: darkgrey;
 }
@@ -94,6 +94,7 @@ font-style: italic;
     
 }
 .main h2{
+    font-family: 'FigGrotesk0.1-Light';
   height: 28px;
   font-weight: normal;
 }
