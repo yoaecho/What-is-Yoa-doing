@@ -66,7 +66,7 @@ body {
     box-shadow: 0px 0px 10px grey;
     transform:rotate(-15deg);
     margin-top: 10%;
-    font-family: 'Gill Sans Light', 'Gill Sans', sans-serif;
+   
     position: relative;
 
 }
@@ -88,7 +88,7 @@ body {
   }
 
 .main a {
-    
+    font-family: 'FigGrotesk0.1-Light';
     text-decoration: none;
     color: black;
     
