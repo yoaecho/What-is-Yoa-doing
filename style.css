@@ -9,7 +9,8 @@
 }
 
 body {
-    cursor: url('shubiao.png'), default;
+    
+    z-index: 999;
 
     height: 2200px;
    }
@@ -37,12 +38,14 @@ body {
 
 
    .floating-image {
+    z-index: 9999;
     position: fixed;
     z-index: -1;
   }
   
   
   .floating-image img {
+    z-index: 9999;
     position: absolute;
     width: 400px;
     height: 300px;
@@ -58,18 +61,34 @@ body {
 }
 
 
-.main{
-    clear: both;
-    width: 45%;
-   margin: 0 auto;
-    height: 350px;
-    box-shadow: 0px 0px 10px grey;
-    transform:rotate(-15deg);
-    margin-top: 10%;
-   
-    position: relative;
-
+.main {
+  clear: both;
+  width: 45%;
+  margin: 0 auto;
+  height: 350px;
+  box-shadow: 0px 0px 10px grey;
+  transform: skewX(-15deg) rotate(-15deg); /* 使用 skewX() 和 rotate() 函数进行倾斜和旋转 */
+  margin-top: 10%;
+  position: relative;
+  animation: floating11 10s infinite;
 }
+
+@keyframes floating11 {
+  0% {
+    transform: translate(10px, 0) skewX(-15deg) rotate(-15deg); /* 添加倾斜和旋转变换 */
+  }
+  50% {
+    transform: translate(20px, 20px) skewX(-15deg) rotate(-15deg); /* 添加倾斜和旋转变换 */
+  }
+  100% {
+    transform: translate(0, 0) skewX(-15deg) rotate(-15deg); /* 添加倾斜和旋转变换 */
+  }
+}
+
+
+
+
+
 @font-face {
     font-family: 'CirrusCumulus';
     src:url('font/CirrusCumulus.otf') format('truetype');
@@ -435,9 +454,10 @@ font-size: 20px;
 /* Publication */
 .content{
     clear: both;
-     width: 22.5%;
+     width: 25%;
      float: left;
      margin-left: 35px;
+     margin-top: -57px;
 }
 .content :active {
     text-decoration: line-through;
@@ -617,7 +637,7 @@ height: 400px;
      width: 22.5%;
      float: left;
      margin-left: 35px;
-     margin-top: 670px;
+     margin-top: 650px;
 }
 .content1 :active {
     text-decoration: line-through;
@@ -869,7 +889,7 @@ height: 570px;
   }        
   .pice1{
     position: absolute;
-    top:560px;
+    top:600px;
     right: 60%;
     background-image: url('self.jpg');
     background-size: cover;
@@ -887,7 +907,7 @@ height: 570px;
         }     
         .pice3{
             position: absolute;
-            top: 900px;
+            top: 960px;
             right: 46%;
             background-image: url('self2.jpg');
             background-size: cover;
@@ -1054,27 +1074,29 @@ height: 570px;
 
                 .back {
                     position: absolute;
-                    margin-top: 2400px;
-                    right: 50px;
+                    margin-top: 20px;
+                    right: 25px;
                     font-family:CirrusCumulus ;
                     font-size: 20px;
                     text-decoration: none;
                     color: white;
                     font-size: 20px;
-                    animation: floating10 80s infinite;
-                }
-                
-                @keyframes floating10 {
-                    0% {
-                        transform: translate3d(0px, 40px, 100px);
-                      }
-                      50% {
-                        transform: translate3d(0, -1200px, 0px);
-                      }
-                      100% {
-                        transform: translate3d(100px, 60px, 0px);
-                      }
-                    }
+                    animation: floating9 10s infinite;
+                  }
+                  
+                  @keyframes floating9 {
+                  0% {
+                    transform: translate(0, 0);
+                  }
+                  50% {
+                    transform: translate(15px, 15px);
+                  }
+                  100% {
+                    transform: translate(0, 0);
+                  }
+                  }
+ 
+                    
                   
                   
                   .back a {
@@ -1133,4 +1155,220 @@ height: 570px;
     line-height: 20px;
     margin-top: 25px;
     font-family: 'FigGrotesk0.1-Light';  /* 文本 */
+}
+
+
+
+/*next*/
+.pub2 {
+  width: 62.5%;
+  float: left;
+  height: 100px; /* 修改为你想要的高度 */
+  margin-top: 20px; /* 修改为你想要的上边距 */
+  margin-left: 25px;
+  animation: floating9 10s infinite;
+}
+
+@keyframes floating9 {
+0% {
+  transform: translate(0, 0);
+}
+50% {
+  transform: translate(20px, 20px);
+}
+100% {
+  transform: translate(0, 0);
+}
+}
+
+
+.pub2 a {
+  font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.pub2 a:active {
+  text-decoration: line-through;
+  color: white;
+}
+
+
+.pos2 {
+  width: 62.5%;
+  float: left;
+  height: 100px; /* 修改为你想要的高度 */
+  margin-top: -100px; /* 修改为你想要的上边距 */
+  margin-left: 270px;
+  animation: floating10 10s infinite;
+}
+
+@keyframes floating10 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0px, 20px, 20px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+.pos2 a {
+  font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.pub2 a:active {
+  text-decoration: line-through;
+  color: white;
+}
+
+.ide2 {
+  width: 62.5%;
+  float: left;
+  height: 100px; /* 修改为你想要的高度 */
+  margin-top: -83px; /* 修改为你想要的上边距 */
+  margin-left:450px;
+  animation: floating9 10s infinite;
+}
+
+@keyframes floating9 {
+  0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -20px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+
+.ide2 a {
+  font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.ide2 a:active {
+  text-decoration: line-through;
+  color: white;
+}
+
+.vid2 {
+  width: 62.5%;
+  float: left;
+  height: 100px; /* 修改为你想要的高度 */
+  margin-top: -130px; /* 修改为你想要的上边距 */
+  margin-left:700px;
+  animation: floating11 10s infinite;
+}
+
+@keyframes floating11 {
+  0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -20px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+
+.vid2 a {
+  font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.vid2 a:active {
+  text-decoration: line-through;
+  color: white;
+}
+
+.exh2 {
+ 
+  width: 62.5%;
+  float: left;
+  height: 100px; /* 修改为你想要的高度 */
+  margin-top: -120px; /* 修改为你想要的上边距 */
+  margin-left:930px;
+  animation: floating10 10s infinite;
+}
+
+@keyframes floating10 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-20px, 20px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+.exh2 a {
+  font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.exh2 a:active {
+  text-decoration: line-through;
+  color: white;
+}
+
+.oth2 {
+  width: 62.5%;
+  float: left;
+  height: 100px; /* 修改为你想要的高度 */
+  margin-top: -120px; /* 修改为你想要的上边距 */
+  margin-left:1150px;
+  animation: floating11 10s infinite;
+}
+
+@keyframes floating11 {
+0% {
+  transform: translate(0, 0);
+}
+50% {
+  transform: translate(20px, 20px);
+}
+100% {
+  transform: translate(0, 0);
+}
+}
+
+
+
+.oth2 a {
+  font-family: "American Typewriter", sans-serif; /* 修改为正确的字体名称 */
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.oth2 a:active {
+  text-decoration: line-through;
+  color: white;
+  
 }
